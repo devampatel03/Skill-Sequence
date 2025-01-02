@@ -61,3 +61,55 @@ const HomeComponent = () => {
 };
 
 export default HomeComponent;
+
+// import React, { useState } from 'react';
+
+// export default function LoginForm({ onSubmit }) {
+//   const [username, setUsername] = useState('');
+//   const [password, setPassword] = useState('');
+
+//   const handleUsernameChange = (event) => {
+//     setUsername(event.target.value);
+//   };
+
+//   const handlePasswordChange = (event) => {
+//     setPassword(event.target.value);
+//   };
+
+//   const handleSubmit = () => {
+//     if (onSubmit) {
+//       onSubmit(username, password);
+//     }
+//     console.log('Submitted');
+//     console.log('Username:', username);
+//     console.log('Password', password);
+//   };
+
+//   const isSubmitDisabled = !username || !password;
+
+//   return (
+//     <div>
+//       <input
+//         id="username-input"
+//         type="text"
+//         value={username}
+//         onChange={handleUsernameChange}
+//         placeholder="Username"
+//       />
+//       <input
+//         id="password-input"
+//         type="password"
+//         value={password}
+//         onChange={handlePasswordChange}
+//         placeholder="Password"
+//       />
+//       <button
+//         id="login-button"
+//         onClick={handleSubmit}
+//         disabled={isSubmitDisabled}
+//       >
+//         Submit
+//       </button>
+//     </div>
+//   );
+// }
